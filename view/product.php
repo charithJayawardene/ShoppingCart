@@ -16,10 +16,6 @@
         <script src="../js/jquery-3.2.1.js" type="text/javascript"></script>
         <script src="../js/resources.js" type="text/javascript"></script>
         <script src="../js/product.js" type="text/javascript"></script>
-        <!--        <a href="../controller/controller_product.php"></a>-->
-        <?php
-//        include_once '../controller/controller_product.php';
-        ?>
     </body>
 </html>
 
