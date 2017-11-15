@@ -16,12 +16,12 @@ $(function () {
 //
 //        }
 //    });
-
-    var y = function () {
+//alert('aaa');
+    var get_count = function () {
         var x;
         $.ajax({
             type: "GET",
-            url: 'model/model_product.php',
+            url: '../model/model_products.php?action=count',
             data: "",
             dataType: 'json',
             success: function (data)
@@ -31,8 +31,8 @@ $(function () {
         });
         return x;
     };
-
-    var howMany = 12;
+    
+    var howMany = get_count();
     listButton = $('button.list-view');
     gridButton = $('button.grid-view');
     wrapper = $('div.wrapper');

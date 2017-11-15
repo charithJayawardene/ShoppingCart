@@ -9,10 +9,13 @@ class model_product {
 
     public function __construct() {
         $this->conn = new database_connection;
+        $this->get_product_count();
     }
 
     public function get_product_count() {
 //        return $this->rows;
+        $this->get_product();
+        print'==========';
         echo json_encode($this->rows);
     }
 
@@ -24,7 +27,7 @@ class model_product {
             $result->execute();
             $this->rows = $result->rowCount();
             $result = $result->fetchAll(PDO::FETCH_ASSOC);
-            return $result;
+            //return $result;
 //            echo json_encode($result);
 //            $result = $result->fetchAll();
 //            $this->names = $result;
